@@ -22,6 +22,7 @@ This is the TDD in OSS workshop repo for GHC 18.
     cd ~/workspace/
     git clone git@github.com:YOUR-ACCOUNT/find-issues
     cd find-issues
+    echo "replace github.com/ghc-tdd/find-issues => ../find-issues" >> go.mod
     ```
 
 1. Run the tests!
@@ -34,7 +35,7 @@ This is the TDD in OSS workshop repo for GHC 18.
 
 1. Pick an issue from the [issues page](https://github.com/ghc-tdd/find-issues/issues).
 
-1. Using a text editor or IDE, create a file in the `acceptance/` directory.
+1. Using a text editor or IDE, open the open_issues file in the `acceptance/` directory.
 
 1. Write the acceptance test for the new feature.
 
