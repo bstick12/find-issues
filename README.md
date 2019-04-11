@@ -6,7 +6,7 @@ This is the TDD in OSS workshop repo for GHC 18.
 
 1. [Genevieve L'Esperance](github.com/genevieve)
 1. [Samantha Langit](github.com/samanthalangit)
-1. [Angela Chin](github.com/chinangela)
+1. [Angela Chin](github.com/angelachin)
 
 ## Setup
 
@@ -19,14 +19,14 @@ This is the TDD in OSS workshop repo for GHC 18.
 1. Clone the repo.
 
     ```bash
-    cd ~/go/src/github.com/YOUR-ACCOUNT
+    cd ~/go/src/github.com/ghc-tdd
     git clone git@github.com:YOUR-ACCOUNT/find-issues
     ```
 
 1. Run the tests!
 
     ```bash
-    ginkgo -r -race -parallel .
+    ginkgo -r -race -p .
     ```
 
 ## The Exercise
@@ -40,7 +40,7 @@ This is the TDD in OSS workshop repo for GHC 18.
 1. Run the test.
 
     ```bash
-    ginkgo -r -race -parallel acceptance/
+    ginkgo -r -race -p acceptance/
     ```
 
 1. Create a file in the appropriate package directory.

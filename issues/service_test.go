@@ -59,6 +59,12 @@ var _ = Describe("Issues Service", func() {
 			})
 		})
 
+		// Context("when we pass in a creator", func() {
+		// 	It("generates the correct rawQuery string", func() {
+		// 		// TODO: add the test here
+		// 	})
+		// })
+
 		Describe("error cases", func() {
 			Context("when the client fails to get the issues endpoint", func() {
 				BeforeEach(func() {
