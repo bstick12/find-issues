@@ -24,7 +24,7 @@ func main() {
 	}
 
 	var repo string
-	if len(remainingArgs) == 0 {
+	if len(remainingArgs) == 1 {
 		log.Fatal("Missing repo. Pass in something like `ghc-tdd/find-issues`!")
 	}
 
