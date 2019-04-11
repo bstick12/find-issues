@@ -1,16 +1,8 @@
 # Contributing
 
-## Vendoring a new dependency
+## Go Modules
 
-The project currently checks in all vendored dependencies.
-Our vendoring tool of choice at present is
-[dep](https://github.com/golang/dep).
-
-Adding a dependency is relatively straightforward:
-
-```go
-  dep ensure -add github.com/some-user/some-dep
-```
+The project uses go modules for dependency management. 
 
 ## Running the tests
 
