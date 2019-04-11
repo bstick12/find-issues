@@ -8,10 +8,23 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
 )
 
 var _ = Describe("Open Issues", func() {
+
+	Context("when calling executable", func() {
+
+		It("errors if called without arguments", func() {
+			command := exec.Command(binaryPath)
+			session, err := gexec.Start(command, GinkgoWriter, GinkgoWriter)
+			Expect(err).ToNot(HaveOccurred())
+			Eventually(session.Err).Should(gbytes.Say("Missing repo. Pass"))
+			Eventually(session).Should(gexec.Exit(1))
+		})
+	})
+
 	It("returns the list of open issues for a given repository", func() {
 		repo := "ghc-tdd/find-issues"
 
