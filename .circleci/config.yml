@@ -18,7 +18,7 @@ jobs:
                     rm profile.out
                 fi
             done
-            mv -v *junit.xml /tmp/test-results
+            find "*junit.xml" -type f -exec mv {} /tmp/test-results
       - run:
           name: post coverage
           command: |
