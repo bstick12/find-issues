@@ -19,8 +19,9 @@ This is the TDD in OSS workshop repo for GHC 18.
 1. Clone the repo.
 
     ```bash
-    cd ~/go/src/github.com/ghc-tdd
+    cd ~/workspace/
     git clone git@github.com:YOUR-ACCOUNT/find-issues
+    cd find-issues
     ```
 
 1. Run the tests!
