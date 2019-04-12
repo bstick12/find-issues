@@ -4,13 +4,15 @@ import (
 	"testing"
 
 	. "github.com/onsi/ginkgo"
+	"github.com/onsi/ginkgo/reporters"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 )
 
 func TestAcceptance(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Acceptance Suite")
+	junitReporter := reporters.NewJUnitReporter("acceptance_junit.xml")
+	RunSpecsWithDefaultAndCustomReporters(t, "Acceptance Suite", []Reporter{junitReporter})
 }
 
 var binaryPath string
